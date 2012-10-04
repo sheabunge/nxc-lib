@@ -1,0 +1,21 @@
+/**
+ * CenterText.Lib.nxc
+ *
+ * Centers text on the NXT screen
+ *
+ * @author Shea Bunge <http://robotics.bungeshea.com>
+ */
+
+int CenterText( const string text ) {
+   int len = StrLen(text);
+   len = (len * 5);
+   len = (100 - len);
+   len = (len / 2);
+   len = (len - 5);
+   return len;
+}
+
+char CenterTextOut( int y, string text, unsigned long options = DRAW_OPT_NORMAL ) {
+   int len = CenterText(text);
+   return TextOut( len, y, text, options );
+}

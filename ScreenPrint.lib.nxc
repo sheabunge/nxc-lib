@@ -1,0 +1,19 @@
+/**
+ * ScreenPrint.Lib.nxc
+ *
+ * Allows you to print text on every line of the NXT
+ * screen using only one function!
+ *
+ * @author Shea Bunge <http://robotics.bungeshea.com>
+ */
+
+void ScreenPrint(string line_1, string line_2, string line_3, string line_4, string line_5, string line_6, string line_7, string line_8)
+{
+ TextOut(0, LCD_LINE1, line_1);
+ TextOut(0, LCD_LINE2, line_2);
+ TextOut(0, LCD_LINE3, line_3);
+ TextOut(0, LCD_LINE4, line_4);
+ TextOut(0, LCD_LINE5, line_5);
+ TextOut(0, LCD_LINE6, line_6);
+ TextOut(0, LCD_LINE7, line_7);
+}

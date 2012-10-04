@@ -1,0 +1,22 @@
+/**
+ * NXC Lib
+ * A library of functions and macros to use in your programs.
+ * Use NXT Lib in your program by adding the line #include "lib.nxc" to the start of the program.
+ */
+
+/******************* Macros *****************/
+
+#define Data(x, y, txt1, num, txt2) TextOut(x, y, StrCat(txt1, NumToStr(num), txt2))
+
+/******************* Functions *****************/
+
+int rotations(int degrees);	// Change rotations to degrees
+int degrees(int rotations);	// Change degrees to rotations
+
+int rotations(int degrees) {
+	return (degrees / 360);
+}
+
+int degrees(int rotations) {
+	return (rotations * 360);
+}

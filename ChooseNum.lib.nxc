@@ -1,0 +1,36 @@
+/*
+	ChooseNum.Lib.nxc
+*/
+
+/**
+ * ChooseNum.Lib.nxc
+ *
+ * Prompts the user to enter a number
+ * using the NXT buttons.
+ *
+ * @uses CenterText.Lib.nxc
+ *
+ * @author Shea Bunge <http://robotics.bungeshea.com>
+ */
+
+#include "CenterText.Lib.nxc"
+
+int ChooseNum(string label, int y, int min, int max) {
+	int value = (max+min)/2;
+	while(!ButtonPressed(BTNCENTER,0)) {
+		string msg = StrCat(label,NumToStr(value));
+		TextOut(CenterText(msg), y, msg);
+		if(ButtonPressed(BTNRIGHT,0)) {
+			while(ButtonPressed(BTNRIGHT,0));
+			value++;
+		}
+		if(ButtonPressed(BTNLEFT,0)) {
+			while(ButtonPressed(BTNLEFT,0));
+			value--;
+		}
+		if (value < min) value = max;
+		if (value > max) value = min;
+	}
+	while(ButtonPressed(BTNCENTER,0));
+	return value;
+}
