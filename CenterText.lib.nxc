@@ -6,6 +6,17 @@
  * @author Shea Bunge <http://robotics.bungeshea.com>
  */
 
+/**
+ * CenterText
+ *
+ * Takes an input string and returns the x position
+ * to use to display the string on the NXT screen
+ * 
+ * @param const string text
+ * @return int len
+ *
+ * @author Shea Bunge <http://robotics.bungeshea.com>
+ */
 int CenterText( const string text ) {
    int len = StrLen(text);
    len = (len * 5);
@@ -15,6 +26,18 @@ int CenterText( const string text ) {
    return len;
 }
 
+/**
+ * CenterTextOut
+ *
+ * Displays a string, centered, on the NXT screen
+ *
+ * @param int y
+ * @param string text
+ * @param unsigned long options
+ * @return char result
+ *
+ * @author Shea Bunge <http://robotics.bungeshea.com>
+ */
 char CenterTextOut( int y, string text, unsigned long options = DRAW_OPT_NORMAL ) {
    int len = CenterText(text);
    return TextOut( len, y, text, options );
