@@ -15,7 +15,7 @@ int ChooseNum(string label, int y, int min, int max) {
 	int value = (max+min)/2;
 	while(!ButtonPressed(BTNCENTER,0)) {
 		string msg = StrCat(label,NumToStr(value));
-		TextOut(CenterText(msg), y, msg);
+		CenterTextOut(y, msg);
 		if(ButtonPressed(BTNRIGHT,0)) {
 			while(ButtonPressed(BTNRIGHT,0));
 			value++;
