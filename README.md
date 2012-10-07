@@ -4,6 +4,7 @@ Feel free to fork and submit pull requests. You will be recognized as the author
 
 ## Usage
 You can use NXT Lib by downloading a zip of the master branch and then unzip it into a folder of your choice. To include a library in one of your NXC programs, add the following code close to the top of the program file:
+
 	#include "C:/Path/to/NXC/Lib/CenterText.Lib.nxc"
 
 Remember to replace `C:/Path/to/NXC/Lib/` with the directory NXC Lib was extracted to previously, and `CenterText.Lib.nxc` with the filename of your chosen library.
@@ -13,6 +14,7 @@ To simplify this process further, you can specify an include directory in [Bricx
 ![](https://sourceforge.net/apps/phpbb/mindboards/download/file.php?id=430&t=1)
 
 Now, you only have to include the library filename in the include statement:
+
 	#include "CenterText.Lib.nxc"
 
 If you need help, please [create an issue](https://github.com/bungeshea/nxc-lib/issues), or make a post in the [Mindboards forums](http://mindboards.sourceforge.net)
