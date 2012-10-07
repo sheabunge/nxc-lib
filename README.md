@@ -17,7 +17,7 @@ Now, you only have to include the library filename in the include statement:
 
 	#include "CenterText.Lib.nxc"
 
-If you need help, please [create an issue](https://github.com/bungeshea/nxc-lib/issues), or make a post in the [Mindboards forums](http://mindboards.sourceforge.net)
+If you need help, please [create an issue](https://github.com/bungeshea/nxc-lib/issues), or make a post in the [Mindboards forums](https://sourceforge.net/apps/phpbb/mindboards/viewtopic.php?f=4&t=1627t)
 
 ## Libraries
 
